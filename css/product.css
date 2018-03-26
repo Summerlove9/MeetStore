@@ -1,0 +1,80 @@
+.container>ul.products-list{
+ display:flex;
+ flex-wrap:wrap;
+ justify-content:center;
+ margin-top:25px;
+}
+.container>ul.products-list>li{
+ margin:5px;
+ color:#737373;
+ width:250px;
+ overflow:hidden;
+ border: 1px solid #d9d9d9;
+ border-radius:3px;
+}
+.container>ul.products-list>li p{
+ margin:8px;
+}
+.container>ul.products-list>li p.price{
+ color:#FFB6C1;
+ font-size:18px;
+}
+.container>ul.products-list>li p.title{
+ font-size:12px;
+}
+.container>ul.products-list>li p.title>a{
+ color:#737373;
+}
+.container>ul.products-list>li p.title>a:hover{
+ color:#000;
+}
+.container>ul.products-list>li p.choice>span{
+ display:inline-block;
+ vertical-align:center;
+ text-align:center;
+ width:107px;
+ border:1px solid #d9d9d9;
+ color:#737373;
+ font-size:12px;
+ padding:4px;
+}
+
+.container>ul.products-list>li p.choice>span:hover{
+ background-color:#FFF0F5;
+ 
+}
+
+/*分页条*/
+div.pager{
+  height:35px;
+  width:1200px;
+  text-align:right;
+  margin:25px 0 8px;
+}
+
+.pager>a{
+  display:inline-block;
+  border:1px solid #dddddd;
+  border-radius: 3px;
+  color:#737373;
+}
+.pager a:hover{
+  color:#737373;
+}
+.pager span>span{
+  display:inline-block;
+  width:25px;
+  border:1px solid #dddddd;
+  border-radius: 3px;
+  text-align:center;
+  color:#737373;
+}
+.pager span>span.active{
+ background:#dddddd;
+ color:#ffffff;
+ border:1px solid #dddddd;
+}
+
+.pager>a.disabled{
+ background: #ccc;
+}

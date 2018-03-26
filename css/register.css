@@ -1,0 +1,45 @@
+div.register{
+     height:420px;
+     background:url('../img/index/back.png') no-repeat;
+	 position:relative;
+}
+div.register>div.register-list{
+width:350px;
+height:308px;
+border:1px solid #CACBCD;
+border-radius:10px;
+background-color:white;
+position:absolute;
+left:800px;
+top:50px;
+text-align:center;
+padding-top:30px;
+}
+div.register>div.register-list>form div.form-group{
+margin-top:8px;
+}
+
+div.register>div.register-list>form div:last-child input{
+width:173px;
+background:#F5B9D8;
+border:none;
+}
+
+.msg-error {
+    background-color: #8E8E8E;
+	width:173px;
+	margin:0 auto;
+	color:white;
+	font-size:10px;
+}
+.msg-success {
+    background-color: #F5B9D8;
+	width:173px;
+	margin:0 auto;
+    color:grey;
+	font-size:10px;
+}
+.hidden {
+    visibility: hidden;
+	font-size:10px;
+}

@@ -1,0 +1,38 @@
+div.login{
+  height:420px;
+  background:url('../img/index/back.png') no-repeat;
+  position:relative;
+}
+div.login>div.login-list{
+width:300px;
+height:300px;
+border:1px solid #CACBCD;
+border-radius:10px;
+background-color:white;
+position:absolute;
+left:800px;
+top:50px;
+text-align:center;
+padding-top:20px;
+}
+div.login>div.login-list>form>p{
+margin-top:10px;
+}
+div.login>div.login-list>form>p:nth-child(5)>input{
+width:173px;
+height:22px;
+background:#666666;
+border:none;
+border-radius:1px;
+color:#F4F4F4;
+font-size:10px;
+}
+div.login>div.login-list>form>p:nth-child(6)>input{
+width:85px;
+height:22px;
+background:#666666;
+border:none;
+border-radius:1px;
+color:#F4F4F4;
+font-size:10px;
+}
