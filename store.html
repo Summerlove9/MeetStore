@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+   <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/store.css">
+  <link rel="stylesheet" href="css/footer.css"> 
+  <style>
+    div.middle{text-align:center;width:1000px;height:480px}
+    p{margin:5px;}
+	div.middle h4:first-child{margin:50px;margin-left:250px;}
+    body{
+            text-align:center;
+    }
+    div.img-store{
+            position:relative;
+			left:95px;
+    }
+    .ctrl{
+            position:absolute;
+            left:50%;/*居中*/
+            top:50%;
+            margin-left:-60px;
+            margin-top:-60px;
+    }
+    .ctrl>img{
+            width:120px;
+            height:120px;
+    }
+    .ad{
+            position:absolute;
+            width:350px;
+            height:230px;
+            left:320px;
+            top:60px;
+    }  
+  </style>
+ </head>
+ <body>
+    <div class="main">
+	  <!-- 1.加载页面头部 -->
+	  <header id="header"></header>
+	  <!--2.加载主体-->
+	  <div class="middle">
+	     <h4>MEET北京太古里总店</h4>
+		 <div class="img-store">
+		 <!--视频元素-->
+		    <video loop id="v1">
+			   <source src="img/store/store.mp4">
+			   您的浏览器版本过低，请先升级！
+			</video>
+			<!--广告-->
+			<img class='ad' src="img/store/store_adv.jpg">
+			<a href="#" class="ctrl">
+			   <img src="img/store/play.png">
+			</a>
+		 </div>
+      </div>
+	  <!-- 3.文字部分 -->
+         <p>秋天，是北京最好的季节。</p>
+         <p>白天，阳光暖暖的；晚上，夜色凉凉的。</p>
+         <p style="margin-bottom:15px;">MEET选择在这个秋天开业，这时令的冷与暖，也在这里交融。</p>
+		 <div class="code">
+		   <img src="img/store/store_code.jpg">
+		 </div>
+		 <h4 style="margin-top:15px;">MEET北京三里屯总店</h4>
+		 <p>北京朝阳区三里屯太古里南区S3-11</p>
+		 <p style="margin-bottom:200px;">TEL:010-8475667</p>
+
+      <!-- 4.加载页面尾部 -->
+	  <footer id="footer"></footer>
+	</div>
+    <script>
+	  //获取元素
+     var ImgStore=document.querySelector('.img-store');
+     var ctrl=document.querySelector('.ctrl');
+     var ad=document.querySelector('.ad');
+     var v1=document.getElementById('v1');
+     var ctrlImg=document.querySelector('.ctrl img');
+     //移入div 显示a按钮
+     ImgStore.onmouseover=function(){
+        ctrl.style.display='block';
+     }
+     //移出div 隐藏a按钮
+     ImgStore.onmouseout=function(){
+         ctrl.style.display='none';
+     }
+     //按钮绑定事件
+     ctrl.onclick=function(){
+         if(v1.paused){//当前正在暂停的状态，调整音量，播放视频
+             v1.volume=0.3;
+             v1.play();
+             ctrlImg.src='img/store/pause.png';
+             ad.style.display='none';//视频播放 广告暂停
+         }else{//否则就暂停
+             v1.pause();
+             ctrlImg.src='img/store/play.png';
+             ad.style.display='block';//视频暂停 广告显示
+         }
+     }
+	</script>
+    <script src='js/jquery-3.2.0.js'></script>
+	<script src='js/header.js'></script>
+	<script src="js/store.js"></script>
+	<script src='js/footer.js'></script>
+ </body>
+</html>

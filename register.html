@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/register.css">
+  <link rel="stylesheet" href="css/footer.css"> 
+ </head>
+ <body>
+    <div class='main'>
+	 <!-- 1.加载页面头部 -->
+	    <header id='header'></header>
+     <!-- 2.注册部分 -->
+		<div class='register'>
+		  <div class='register-list'>
+		   <form id='form-register'>
+			  <p>MEET</p>
+			  <p style=font-size:10px>
+			    <span>已有账号？</span>
+				<a href="login.html" style=color:#F63E40>立即登录</a>
+			  </p>
+			  <div class="form-group">
+				<input type="text" placeholder='用户名' name='uname' id='uname' required>
+				<p class="msg-default hidden">123</p>
+			  </div>
+			  <div class="form-group">
+				<input type="password" placeholder='密码' name='upwd' id='upwd' required>
+				<p class="msg-default hidden">123</p>
+			  </div>
+			  <div class="form-group">
+				<input type="password" placeholder='确认密码' name='upwdcn' id='upwdcn' required>
+				<p class="msg-default hidden">123</p>
+			  </div>
+			  <div class="form-group">
+				<input type="text" placeholder='手机号' name='phone' id='phone' pattern="(\d{11})|^((\d{7,8})|(\d{4}|\d{3})-(\d{7,8})|(\d{4}|\d{3})-(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1})|(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1}))$"
+                 required>
+				<p class="msg-default hidden">123</p>
+			  </div>
+			  <div class="form-group">
+              <input type="button" value="提交注册信息" id="bt-register"/>
+              </div>
+		   </form>
+		  </div>
+		</div>
+	 <!-- 3.加载页面尾部 -->
+	    <footer id="footer"></footer>
+	</div>
+	<script src='js/jquery-3.2.0.js'></script>
+	<script src='js/header.js'></script>
+	<script src='js/register.js'></script>
+	<script src='js/footer.js'></script>
+ </body>
+</html>
