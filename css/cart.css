@@ -1,0 +1,73 @@
+
+.main>div.title{
+ width:1200px;
+ height:70px;
+ margin-top:25px;
+ padding-left:20px;
+ box-sizing:border-box;
+ line-height:70px;
+ font-size:18px;
+ background:#333333;
+ color:#CECECE;
+}
+/**购物车标题**/
+.main>.cart>.cart-head{
+ height:50px;
+ line-height:50px;
+ padding-left:30px;
+ box-sizing:border-box;
+ font-size:16px;
+}
+.main>.cart>.cart-head>span{
+ display:inline-block;
+ width:100px;
+ float:right;
+ text-align:center;
+}
+/**购物车内容**/
+.main>.cart>.cart-content>.cart-details{
+ height:100px;
+ width:1200px;
+ line-height:100px;
+ padding-left:30px;
+ box-sizing:border-box;
+ font-size:16px;
+ display:flex;
+ justify-content:flex-end;
+ position:relative;
+}
+.main>.cart>.cart-content>.cart-details>input{
+ position:absolute;
+ top:42px;
+ left:25px;
+}
+.main>.cart>.cart-content>.cart-details>img{
+ width:90px;
+ height:95px;
+}
+.main>.cart>.cart-content>.cart-details>a{
+ display:inline-block;
+ width:630px;
+ padding-left:20px;
+}
+.main>.cart>.cart-content>.cart-details>span{
+ display:inline-block;
+ width:100px;
+ text-align:center;
+}
+/**底部总计**/
+.main>.cart>.cart-content>.cart-end{
+ height:50px;
+ margin-top:200px;
+ margin-bottom:10px;
+ text-align:right;
+ line-height:50px;
+ padding-right:20px;
+}
+.main>.cart>.cart-content>.cart-end>button{
+ margin-left:50px;
+ width:100px;
+ height:30px;
+ background:#333333;
+ color:#CECECE;
+}
