@@ -8,15 +8,16 @@
 }
 .main>.container>.btns a{
   margin-right:20px;
+  padding: 10px;
+  border-radius: 5px;
   color:black;
   background-color:#E6E6E6;
 }
 
 .main>.container>.introduce{
-  width:700px;
+  width:50%;
   height:860px;
-  margin-top:20px;
-  margin-left:225px;
+  margin: 30px auto 125px auto;
   display:flex;
   flex-wrap:wrap;
   justify-content:center;
@@ -68,6 +69,8 @@
   opacity:0;
 }
 .show{
+  width: 80%;
+  margin: 0 auto;
   opacity:1;
   transition:all 2s linear;
 }

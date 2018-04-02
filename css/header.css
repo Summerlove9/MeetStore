@@ -1,11 +1,21 @@
+#header{
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
 div.header>h6.left{
  padding:0;
- margin-top:8px;
+ /*margin-top:8px;*/
+ font-size: 12px;
  font-weight:normal;
 }
 table.nav>tbody>tr>td.nav->a{
- font-size:15px;
+ font-size:14px;
  color:black;
+}
+table.nav>tbody>tr>td.nav_top_a>a{
+  font-weight: bold;
+  font-size: 16px;
 }
 table.nav>tbody>tr>td.nav->a:hover{
  color:#0aa1ed;
@@ -15,6 +25,7 @@ div.header>div.right{
 }
 div.header>div.right>a{
  color:black;
+
 }
 div.header>div.right>a:hover{
     color:#0aa1ed;
@@ -28,6 +39,7 @@ table.nav{
  table-layout:fixed;
  margin:0 auto;
  margin-top:35px;
+ margin-left:195px;
  text-align:center;
  box-sizing:border-box;
 }
@@ -38,6 +50,24 @@ table.nav tr:first-child{
 }
 table.nav tr:last-child{
  vertical-align:top;
+}
+#search input{
+  border-radius:15px;
+  outline:0;
+  width:100px; 
+  height: 10px;
+  border: 1px solid #ccc; 
+  padding: 10px;
+}
+table.nav #search{
+  position:relative;
+}
+table.nav #search img{
+  border-radius:15px;
+  opacity:0.6;
+  position:absolute;
+  right:20%;
+  top:14px;
 }
 a:hover{
     color:#0aa1ed;

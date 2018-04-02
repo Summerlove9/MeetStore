@@ -1,8 +1,10 @@
 /**异步请求商品列表**/
 function loadProductByPage(pno,pageSize){
+  var kw = null;
+  if(location.search)kw = location.search.split('=')[1];
   $.ajax({
     url: 'data/product/list.php',
-    data: {pno:pno,pageSize:pageSize},
+    data: {pno:pno,pageSize:pageSize,kw:kw},
     success: function(pager){
       //填充商品列表
       var html = '';
@@ -16,7 +18,7 @@ function loadProductByPage(pno,pageSize){
 			<div class="product-intro">
 				<p class="price">￥${p.price}</p>  
 				<p class="title"><a href="#">${p.title}</a></p>
-				<p class="choice"><span>收藏</span><span>加入购物车</span></p>
+				<p class="choice"><span>收藏</span><span class="addtocart">加入购物车</span></p>
 			</div>
 		  </li>
         `;
@@ -92,4 +94,28 @@ $('#next').click(function(e){
       loadProductByPage(i+1,20);
 	}
 })
-
+//加入购物车点击事件
+$('ul.products-list').on('click','span.addtocart',function(e){
+ // console.log($(e.target));
+  var $tar=$(e.target);
+  var $li=$tar.parent().parent().parent();
+  //console.log($li);
+  var $lid=$li[0]['id'];
+  //console.log($lid);
+  
+  $.ajax({
+	url: 'data/cart/add.php',
+    data: {lid:$lid},
+    success: function(result){
+		if(result.code==300){
+		  alert('登陆后才能加入购物车哦~')
+		}else{
+		  alert('商品已添加到您的购物车啦')
+		};
+       
+    },
+	error: function(){
+	   alert("网络错误请重试！");
+	}
+  })
+});

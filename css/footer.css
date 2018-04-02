@@ -1,10 +1,13 @@
+#footer{
+	background-color:#333;
+}
 div.footer-main>ul li{
  list-style:none;
  margin:5px;
 }
 .footer-main{
+	width: 80%;
 margin:0 auto;
-width:1200px;
 display:flex;
 justify-content:center;
 background:#333333;
@@ -28,14 +31,12 @@ padding-bottom:7px;
 color:#CECECE;
 }
 #footer-last{
-width:1200px;
 height:50px;
 background:#212121;
 margin:0 auto;
 }
 .footer1{
-padding-top:20px;
-width:1200px;
+padding:20px 0 10px 0;
 height:20px;
 background:#333333;
 color:#999999;

@@ -25,7 +25,7 @@
  text-align:center;
 }
 /**购物车内容**/
-.main>.cart>.cart-content>.cart-details{
+.main>.cart>.cart-content .cart-details{
  height:100px;
  width:1200px;
  line-height:100px;
@@ -36,21 +36,21 @@
  justify-content:flex-end;
  position:relative;
 }
-.main>.cart>.cart-content>.cart-details>input{
+.main>.cart>.cart-content .cart-details>input{
  position:absolute;
  top:42px;
  left:25px;
 }
-.main>.cart>.cart-content>.cart-details>img{
+.main>.cart>.cart-content .cart-details>img{
  width:90px;
  height:95px;
 }
-.main>.cart>.cart-content>.cart-details>a{
+.main>.cart>.cart-content .cart-details>a{
  display:inline-block;
  width:630px;
  padding-left:20px;
 }
-.main>.cart>.cart-content>.cart-details>span{
+.main>.cart>.cart-content .cart-details>span{
  display:inline-block;
  width:100px;
  text-align:center;

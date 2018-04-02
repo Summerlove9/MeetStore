@@ -1,12 +1,16 @@
 .main>.container>#banner{
-width:1140px;
+width:70%;
 height:301px;
-background-image:url("../img/story/story_head.jpg");
+background:url("../img/story/story_head.jpg") no-repeat 0 0;
+margin:0 auto;
 margin-top:10px;
 margin-bottom:20px;
+background-size: cover;
 }
 .main>.container>.para{
  text-align:center;
+ width: 80%;
+ margin: 0 auto;
 }
 
 .main>.container>.para img{
@@ -39,6 +43,8 @@ div.img{
 .main>.container>.example{
  display:flex;
  flex-wrap:wrap;
+  width: 1140px;
+ margin: 0 auto;
 }
 .main>.container>.example>li{
  width:360px;
@@ -49,7 +55,19 @@ div.img{
 }
 .ngBlue{
  background-color:#E5E5E5;
+ padding: 20px 0 20px 0;
 }
 .main>.container .para h4{
  margin-top:50px;
+}
+.story_text{
+	line-height: 30px;
+	color: #666;
+}
+.story_title{
+	padding: 20px;
+}
+.story{
+	color: #666;
+	line-height: 34px;
 }

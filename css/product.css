@@ -1,3 +1,7 @@
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
 .container>ul.products-list{
  display:flex;
  flex-wrap:wrap;
@@ -47,9 +51,8 @@
 /*分页条*/
 div.pager{
   height:35px;
-  width:1200px;
   text-align:right;
-  margin:25px 0 8px;
+  margin:25px 20px 8px;
 }
 
 .pager>a{

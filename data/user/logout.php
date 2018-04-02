@@ -4,7 +4,7 @@
 * 返回数据形如：{"code":200, "msg":"logout succ"}
 */
 header('Content-Type: application/json;charset=UTF-8');
-require once('../init.php');
+require('../init.php');
 
 session_start();
 session_destroy();

@@ -1,55 +1,57 @@
 /*banner部分*/
 #banner{
-    width:1000px;
-    height:350px;
+    width:1200px;
+    height:400px;
     position:relative;
-	margin:17px auto;
+	margin:20px auto;
+
 }
 #banner div.banner-img{
+    width:1200px;
     position:absolute; 
 	left:0;
 }
 #banner div.banner-img>div{
-	width:100px;
-	height:350px;
+	width:120px;
+	height:400px;
 	position:absolute; top:0;
 	background-image:url('img/index/1.jpg');
 }
 #banner div.banner-img>div:nth-child(3){
-	left:100px; background-position:-100px 0;
+	left:120px; background-position:-120px 0;
 }
 #banner div.banner-img>div:nth-child(4){
-	left:200px; background-position:-200px 0;
+	left:240px; background-position:-240px 0;
 }
 #banner div.banner-img>div:nth-child(5){
-	left:300px; background-position:-300px 0;
+	left:360px; background-position:-360px 0;
 }
 #banner div.banner-img>div:nth-child(6){
-	left:400px; background-position:-400px 0;
+	left:480px; background-position:-480px 0;
 }
 #banner div.banner-img>div:nth-child(7){
-	left:500px; background-position:-500px 0;
-}
-#banner div.banner-img>div:nth-child(8){
 	left:600px; background-position:-600px 0;
 }
+#banner div.banner-img>div:nth-child(8){
+	right:360px; background-position:-720px 0;
+}
 #banner div.banner-img>div:nth-child(9){
-	left:700px; background-position:-700px 0;
+	right:240px; background-position:-840px 0;
 }
 #banner div.banner-img>div:nth-child(10){
-	left:800px; background-position:-800px 0;
+	right:120px; background-position:-960px 0;
 }
 #banner div.banner-img>div:nth-child(11){
-	left:900px; background-position:-900px 0;
+	right:0; background-position:-1040px 0;
 }
 @keyframes shake{
-	0%{ top:0px }
-	25%{ top:-10px }
-	50%{ top:0px }
-	65%{ top:-10px }
-	80%{ top:10px }
-	90%{ top:-10px }
-	100%{ top:0px }
+	0%{ top:15px }
+	25%{ top:-30px }
+	50%{ top:15px }
+	65%{ top:-30px }
+	80%{ top:15px }
+	90%{ top:-30px }
+	100%{ top:15px }
 }
 #banner div.banner-img>div.shake{
 	animation: shake .5s linear;
@@ -58,7 +60,7 @@
 /*左右箭头*/
 #banner a.ck-slide{
     position:absolute;
-    top:125px;
+    top:165px;
     width:35px;
     height:70px;
     border-radius:3px;
@@ -117,7 +119,7 @@
    width:100%;
    height:35px;
    line-height:35px;
-   background-color:rgba(0,0,0,0.3);
+   background-color:rgba(0,0,0,0.6);
    text-align:center;
 }
 #choose div:first-Child{
@@ -137,7 +139,7 @@
 #choose div:nth-child(3){
   width:340px;
   height:185px;
-  top:210px;
+  top:230px;
   left:5px;
   background-image:url(../img/index/write.png);
 }
@@ -145,13 +147,13 @@
   width:430px;
   height:380px;
   right:5px;
-  top:210px;
+  top:230px;
   background-image:url(../img/index/about.jpg);
 }
 #choose div:nth-child(5){
   width:340px;
   height:188px;
-  top:403px;
+  top:423px;
   left:5px;
   background-image:url(../img/index/store.jpg);
 }
@@ -163,12 +165,13 @@
   margin:10px;
 }
 .main #banner2 div.information{
-  font-size:12px;
+  font-size:13px;
   color:#858585;
   width:400px;
   display:flex;
   flex-wrap:wrap;
-  margin:10px auto;
+  margin:10px auto 20px auto;
+  line-height: 30px;
 }
 .main #banner2 div.banner2-img{
   width:1000px;
